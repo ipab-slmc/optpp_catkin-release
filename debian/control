@@ -1,0 +1,12 @@
+Source: ros-kinetic-optpp-catkin
+Section: misc
+Priority: extra
+Maintainer: Wolfgang Merkt <wolfgang.merkt@ed.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), autoconf, gfortran, git, ros-kinetic-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-optpp-catkin
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, 
+Description: The OPT++ catkin wrapper package
