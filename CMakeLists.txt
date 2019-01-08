@@ -24,7 +24,7 @@ ExternalProject_Add_Step(optpp CopyToDevel
 if(IS_DIRECTORY ${CMAKE_INSTALL_PREFIX})
   message(WARNING "Compiling for install workspace")  
   catkin_package(
-    INCLUDE_DIRS include
+    INCLUDE_DIRS include/${PROJECT_NAME}
     LIBRARIES opt newmat
     CFG_EXTRAS optpp_extra.cmake
   )
