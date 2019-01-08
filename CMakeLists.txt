@@ -21,7 +21,7 @@ ExternalProject_Add_Step(optpp CopyToDevel
   DEPENDEES install
 )
 
-if(DEFINED ${CATKIN_INSTALL_PREFIX})
+if(IS_DIRECTORY ${CMAKE_INSTALL_PREFIX})
   message(WARNING "Compiling for install workspace")  
   catkin_package(
     INCLUDE_DIRS include
